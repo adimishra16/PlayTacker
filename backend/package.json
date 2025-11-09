@@ -1,0 +1,28 @@
+{
+  "name": "live-cricket-scoreboard-backend",
+  "version": "1.0.0",
+  "description": "Backend scaffold for a Live Cricket Scoreboard Management System using Node.js, Express.js, MongoDB (mongoose) for live updates, and MySQL (sequelize/mysql2) for persistent data. Includes Socket.io for real-time updates.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "lint": "echo \"(add your linter here)\""
+  },
+  "keywords": ["express", "socket.io", "mongodb", "mongoose", "mysql", "sequelize", "live-scores", "cricket"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.6.1",
+    "mysql2": "^3.11.3",
+    "sequelize": "^6.37.3",
+    "socket.io": "^4.7.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

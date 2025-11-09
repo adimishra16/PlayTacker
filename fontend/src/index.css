@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 140 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 15% 15%;
+
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 72% 51%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 140 10% 95%;
+    --muted-foreground: 140 8% 46%;
+
+    --accent: 43 96% 56%;
+    --accent-foreground: 140 15% 15%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 20% 90%;
+    --input: 140 20% 90%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.75rem;
+
+    --gradient-hero: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 28%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(140 10% 98%));
+    --shadow-card: 0 4px 20px -4px hsl(142 76% 36% / 0.15);
+    --shadow-score: 0 8px 32px -8px hsl(142 76% 36% / 0.25);
+  }
+
+  .dark {
+    --background: 140 30% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 140 25% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 140 25% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 142 76% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 72% 51%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 140 20% 18%;
+    --muted-foreground: 140 10% 65%;
+
+    --accent: 43 96% 56%;
+    --accent-foreground: 140 15% 15%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 20% 20%;
+    --input: 140 20% 20%;
+    --ring: 142 76% 42%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(142 76% 28%), hsl(142 76% 20%));
+    --gradient-card: linear-gradient(180deg, hsl(140 25% 12%), hsl(140 25% 10%));
+    --shadow-card: 0 4px 20px -4px hsl(142 76% 42% / 0.2);
+    --shadow-score: 0 8px 32px -8px hsl(142 76% 42% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
